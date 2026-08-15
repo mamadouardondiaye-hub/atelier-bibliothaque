@@ -9,6 +9,7 @@ use App\Controllers\CategoryController;
 use App\Controllers\DashboardController;
 use App\Controllers\UserController;
 
+
 $router->get('/', [DashboardController::class, 'index'], ['auth']);
 
 $router->get('/login', [AuthController::class, 'showLogin'], ['guest']);
@@ -21,6 +22,7 @@ $router->post('/users', [UserController::class, 'store'], ['auth', 'role:Admin']
 $router->get('/users/{id}/edit', [UserController::class, 'edit'], ['auth', 'role:Admin']);
 $router->post('/users/{id}/update', [UserController::class, 'update'], ['auth', 'role:Admin']);
 $router->post('/users/{id}/delete', [UserController::class, 'delete'], ['auth', 'role:Admin']);
+
 
 $router->get('/categories', [CategoryController::class, 'index'], ['auth', 'role:Admin,Bibliothecaire']);
 $router->get('/categories/create', [CategoryController::class, 'create'], ['auth', 'role:Admin,Bibliothecaire']);

@@ -1,10 +1,5 @@
 # Atelier Bibliothèque — Mamadou Ardo Ndiaye (ESP 221)
 
-Reproduction fidèle de l'application web "Bibliothèque du Savoir" du prof (base :
-[bbabadara/ateliers-pratiques-php](https://github.com/bbabadara/ateliers-pratiques-php)/bibliotheque),
-**adaptée pour PostgreSQL** (le prof avait fait la version MySQL/MariaDB — voir `bibliotheque/README.md`
-original pour la description complète des fonctionnalités, règles métier et comptes de démo).
-
 Architecture, routes, vues, règles métier : strictement identiques à l'original. Seule la couche
 base de données a changé.
 
